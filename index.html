@@ -31,7 +31,7 @@
     </form>
 
     <ul>
-      <li ng-repeat="m8 in friends | filter: searchTerm | orderBy: sortProp + sortDirection" class='friend'>
+      <li ng-repeat="m8 in friends | filter: searchTerm | orderBy: sortDirection + sortProp" class='friend'>
         <img class="profile-pic" ng-src='{{m8.pic_square}}'>
         <h3>{{m8.name}}</h3>
         <div class="location">
